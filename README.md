@@ -1,1 +1,2 @@
-# Portfolio-project1
+# Portfolio-project1 
+using HTML and CSS including some basics of JavaScript
