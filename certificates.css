@@ -1,0 +1,112 @@
+@import 'utilities.css';
+
+:root {
+  --primary: rgb(29, 221, 189);
+  --bgDark: rgb(12, 12, 12);
+  --white: rgb(249, 245, 245);
+  --secondary: rgb(0, 59, 50);
+  --bgLight: rgb(190, 181, 181);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  background-color: var(--bgDark);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px; /* Adjust margin as needed */
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 3rem;
+  }
+header nav .left a {
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .2s ease;
+  }
+  
+  header nav .left a:hover {
+    color: var(--primary);
+  }
+  
+  header nav {
+    padding: 2rem 0;
+  }
+  
+  header nav .logo {
+    margin-right: 3rem;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container1 {
+    
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .dropdown {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  .certificate-display {
+    text-align: center;
+  }
+  
+  /* Hide dropdown arrow */
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('dropdown-icon.png'); /* Replace 'dropdown-icon.png' with your select icon */
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 25px; /* Adjust as needed based on icon size */
+  }
+  
+  /* Style for certificate images */
+  img.certificate {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  

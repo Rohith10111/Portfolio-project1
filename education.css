@@ -1,0 +1,88 @@
+@import 'utilities.css';
+
+:root {
+  --primary: rgb(29, 221, 189);
+  --bgDark: rgb(12, 12, 12);
+  --white: rgb(249, 245, 245);
+  --secondary: rgb(0, 59, 50);
+  --bgLight: rgb(190, 181, 181);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'fantasy', sans-serif;
+  background-image: url("rohith.jpeg");
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--bgDark);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+  padding: 2rem 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px; /* Adjust margin as needed */
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 3rem;
+}
+
+header nav .left a {
+  color: var(--white);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all .2s ease;
+}
+
+header nav .left a:hover {
+  color: var(--primary);
+}
+
+h1 {
+  color: white;
+  text-decoration-color: aqua;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+tr{
+    color:cyan;
+}
+
+th {
+  background-color: #3493b9;
+  color: var(--white);
+}
+
+tbody tr:hover {
+  color: white;
+  background-color: #165086;
+}

@@ -1,0 +1,421 @@
+@import 'utilities.css';
+
+:root {
+  --primary: rgb(29, 221, 189);
+  --bgDark: rgb(12, 12, 12);
+  --white: rgb(249, 245, 245);
+  --secondary: rgb(0, 59, 50);
+  --bgLight: rgb(190, 181, 181);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  background-color: var(--bgDark);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+}
+
+.dropdown {
+    position: relative;
+    z-index: 2; 
+    position: relative;
+    display: inline-block;
+    
+}
+
+  
+  .btn {
+    background-color: #f7f2f2;
+    color: rgb(9, 9, 9);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #080808;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .theme-controller {
+    display: block;
+    width: 170%;
+    padding: 8px;
+    border: none;
+    background-color: black;
+    text-align: right;
+    transition: background-color 0.3s ease;
+  }
+  
+  .theme-controller:hover {
+    background-color: #e3e3e3;
+  }
+  
+  .theme-controller input[type="radio"] {
+    display: flex;
+  }
+  
+  .theme-controller input[type="radio"] + label {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .theme-controller input[type="radio"]:checked + label {
+    background-color: #13a028;
+    color: rgb(161, 40, 40);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+header nav .left a {
+  color: var(--white);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all .2s ease;
+}
+
+header nav .left a:hover {
+  color: var(--primary);
+}
+
+header nav {
+  padding: 2rem 0;
+}
+
+header nav .logo {
+  margin-right: 3rem;
+}
+
+body {
+  font-family: 'fantasy', sans-serif;
+}
+
+  /* Button style */
+  .btn {
+    background-color: #020602; /* Default button background color */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown content */
+  .dropdown-content {
+    display: none; /* Hide by default */
+    position: absolute;
+    background-color: #e6d7d7; /* Dropdown background color */
+    min-width: 120px; /* Adjust as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Dropdown box shadow */
+    z-index: 1;
+    /* Additional styles */
+    padding: 8px; /* Adjust padding as needed */
+    border-radius: 8px; /* Adjust border radius as needed */
+  }
+  
+  /* Dropdown content links */
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px; /* Adjust padding as needed */
+  }
+  
+  /* Hover effect for dropdown content links */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1; /* Adjust hover background color as needed */
+  }
+  
+  /* Show dropdown content when dropdown is hovered */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Show dropdown content when dropdown is focused */
+  .dropdown:focus-within .dropdown-content {
+    display: visible;
+  }
+  
+  
+
+
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+.hero {
+    
+    position: relative;
+    background-image: url("black.gif");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+  
+.left, .right {
+    position: relative; 
+    z-index: 1; 
+}
+
+
+.hero .left img {
+    z-index: 1;
+  width: 400px;
+}
+
+.hero .right {
+    z-index: 1;
+  color: var(--black);
+  margin-top: -7rem;
+}
+.right h6, .right h1, .right p {
+    color: #ffffff; 
+}
+.hero .right h6 {
+  font-size: 1.6rem;
+  background-attachment:fixed;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.hero .right h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.hero .right h1 span {
+  color: var(--primary);
+}
+
+.hero .right p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-right {
+  justify-content: flex-end;
+}
+
+.justify-left {
+  justify-content: flex-start;
+}
+
+.btn {
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all .2s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--secondary);
+  margin-top: -15rem;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.flex-1 {
+
+  flex: 1;
+}
+section {
+    background-image: url("rohith.jpeg");
+  padding: 6rem;
+}
+
+section.about h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+section.about h1 span {
+  color: var(--primary);
+}
+
+section.about h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+section.about p {
+  font-family: 'Lato', sans-serif;
+  color: var(--secondary);
+  line-height: 1.9rem;
+  margin-bottom: 2rem;
+}
+
+section.about .socials {
+  display:flex;
+}
+
+section.about .socials a {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 35px;
+  margin-right: 0.8rem;
+  border-radius: 50%;
+}
+
+section.about .socials a:hover {
+  background: var(--primary);
+}
+
+section.services {
+  background: rgb(17, 17, 17);
+}
+
+.services-head {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5rem;
+}
+
+.services-head + p {
+  color: var(--white);
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 6rem;
+  font-weight: 400;
+}
+
+.card img {
+  width: 50px;
+  background: white;
+}
+
+section.services .card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+section.services .card-grid .card {
+  background: var(--white);
+  padding: 3rem 2rem;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease;
+}
+
+section.services .card-grid .card img {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--secondary);
+}
+
+section.services .card-grid .card h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--black);
+}
+
+section.services .card-grid .card p {
+  font-family: 'Lato', sans-serif;
+  color: var(--secondary);
+  line-height: 1.6;
+}
+
+section.services .card-grid .card:hover {
+  background: var(--primary);
+}
+
+section.services .card-grid .card:hover h2 {
+  color: var(--white);
+}
+
+section.services .card-grid .card:hover p {
+  color: var(--white);
+}
+.join {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two columns */
+    gap: 1rem; /* Adjust the gap between buttons */
+  }
+  
+  .join-item {
+    /* Shared styles for both buttons */
+    padding: 0.5rem 1rem;
+    border: 1px solid #448dc9; /* Black border */
+    border-radius: 0.25rem; /* Rounded corners */
+    font-size: 1rem; /* Adjust font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  /* Hover style for buttons */
+.join-item:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* Style for the "Previous page" button */
+#previousPage {
+  /* Adjust styles for the previous button */
+}
+
+/* Style for the "Next" button */
+#nextPage {
+  /* Adjust styles for the next button */
+}
+

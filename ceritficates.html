@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="certificates.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"
+rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<title>Portfolio</title>
+</head>
+<body>
+    <header>  
+        <div class="container">  
+          <nav class="flex items-center justify-between"> <!-- Corrected typo in class name -->
+            <div class="left flex justify-end"> <!-- Corrected typo in class name -->
+              <div class="logo"> 
+                <img src="GOT.jpg" width="50px" alt="logo"> <!-- Removed unnecessary line break -->
+              </div> 
+              <div>  
+                <a href="port1 (1).html">Home</a>  
+                <a href="about.html">About</a>  
+                <a href="education.html">EDUCATION</a>  
+                <a href="ceritficates.html">Certificates</a> <!-- Corrected typo in "Certificates" -->
+                <a href="#">More</a> 
+              </div>  
+            </div>
+          </nav>
+        </div>  
+      </header>
+
+  <div class="container1">
+    <h1><center>Certificates</center></h1>
+    <div class="dropdown">
+      <select id="certificateSelect">
+        <option value="select">select</option>
+        <option value="certificate1">Secondary school education</option>
+        <option value="certificate2">Diploma</option>
+        <option value="certificate3">Bachelors of technology</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+    <div class="certificate-display" id="certificateDisplay">
+      <!-- Certificate image will be displayed here -->
+    </div>
+  </div>
+  <script src="cert.js"></script> <!-- Include JavaScript file -->
+</body>
+</html>
